@@ -29,3 +29,4 @@ widget = QtWidgets.QStackedWidget()
 widget.addWidget(main_win)
 
 widget.show()
+
