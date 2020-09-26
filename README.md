@@ -1,3 +1,4 @@
+# coding_app_or_ide
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication
@@ -16,7 +17,7 @@ class Editor(QDialog):
 
     def play(self):
         try:
-            exec(str(self.plainTextEdit.text()))
+            print(str(self.plainTextEdit.text()))
         except:
             error = Error()
             widget.addWidget(error)
