@@ -17,7 +17,7 @@ class Editor(QDialog):
 
     def play(self):
         try:
-            print(str(self.plainTextEdit.text()))
+            exec(str(self.plainTextEdit.text()))
         except:
             error = Error()
             widget.addWidget(error)
